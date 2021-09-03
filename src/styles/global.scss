@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Averia+Libre&display=swap");
-
-$primary-color: white;
+@import "./themes";
 
 html {
   -webkit-box-sizing: border-box;
@@ -16,14 +15,14 @@ html {
   -moz-box-sizing: inherit;
   box-sizing: inherit;
   text-decoration: none;
+  font-family: "Averia Libre", sans-serif;
 }
 
 body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  font-family: "Averia Libre", sans-serif;
-  color: $primary-color;
+  color: $textColor;
   background: #12c2e9; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,

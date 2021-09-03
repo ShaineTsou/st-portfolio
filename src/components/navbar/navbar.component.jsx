@@ -11,7 +11,7 @@ const Navbar = () => {
         <div className="option">About</div>
         <div className="option">Projects</div>
         <div className="option">Contact</div>
-        <button>Resume</button>
+        <button className="resume-btn">Resume</button>
       </div>
     </nav>
   )

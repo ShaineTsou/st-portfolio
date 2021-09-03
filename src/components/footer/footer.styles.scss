@@ -1,0 +1,17 @@
+@import "../../styles/mixins";
+
+.footer-container {
+  width: 100%;
+
+  .social-container {
+    @include flexCenter;
+
+    .social-btn {
+      margin: 10px 20px;
+    }
+  }
+
+  .footer-text {
+    @include flexCenter;
+  }
+}
