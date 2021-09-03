@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Averia+Libre&display=swap");
 @import "./themes";
+@import "./fonts";
 
 html {
   -webkit-box-sizing: border-box;
@@ -15,7 +15,7 @@ html {
   -moz-box-sizing: inherit;
   box-sizing: inherit;
   text-decoration: none;
-  font-family: "Averia Libre", sans-serif;
+  font-family: $mainFont, sans-serif;
 }
 
 body {
