@@ -9,7 +9,11 @@
 
     .social-btn {
       margin: 10px 20px;
-      color: $textColor;
+      color: $paragraphColor;
+
+      &:hover {
+        color: $hoverColor;
+      }
     }
   }
 

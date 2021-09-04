@@ -1,9 +1,11 @@
+@import "../../styles/themes";
+
 .navbar-container {
   width: 100%;
   height: 60px;
   display: flex;
   justify-content: space-between;
-  padding: 0 30px;
+  padding: 30px;
 
   .icon-container {
     width: 30%;
@@ -18,17 +20,27 @@
     align-items: center;
 
     .option {
-      padding: 10px 15px;
+      padding: 10px 20px;
       cursor: pointer;
+
+      &:hover {
+        color: $hoverColor;
+      }
     }
   }
 
   .resume-btn {
     border: none;
     border-radius: 10px;
-    background-color: orange;
     outline: none;
+    background-color: $btnBgColor;
     padding: 10px 15px;
     cursor: pointer;
+    color: $btnTextColor;
+    font-size: 16px;
+
+    &:hover {
+      background-color: $cardBtnBg;
+    }
   }
 }

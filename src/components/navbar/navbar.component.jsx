@@ -1,11 +1,19 @@
 import React from "react"
+import { StaticImage } from "gatsby-plugin-image"
 import "./navbar.styles.scss"
 
 const Navbar = () => {
   return (
     <nav className="navbar-container">
       <div className="icon-container">
-        <span>Icon</span>
+        <StaticImage
+          src="../../images/icon.png"
+          alt="website icon"
+          placeholder="blurred"
+          layout="fixed"
+          width={60}
+          height={60}
+        />
       </div>
       <div className="options-container">
         <div className="option">About</div>
