@@ -1,4 +1,39 @@
+@import "../../../styles/themes";
+@import "../../../styles/mixins";
+
 .hero-container {
-  width: 70%;
-  margin: 90px auto 30px;
+  width: 60%;
+  margin: 20vh auto 30px 10vw;
+  height: 80vh;
+
+  h3 {
+    font-size: 1.75rem;
+    line-height: 1rem;
+    color: $subHeadlineColor;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+    line-height: 2rem;
+  }
+
+  h2 {
+    font-size: 3.25rem;
+    line-height: 1.5rem;
+  }
+
+  .summary {
+    width: 100%;
+    color: $paragraphColor;
+    @include paragraphText;
+    font-size: 1.25rem;
+  }
+
+  .social-container {
+    justify-content: flex-start;
+
+    .social-btn {
+      margin: 0px 15px;
+    }
+  }
 }

@@ -5,23 +5,13 @@
   width: 100%;
   margin: 60px auto 20px;
 
-  .social-container {
-    @include flexCenter;
-
-    .social-btn {
-      margin: 10px 20px;
-      color: $paragraphColor;
-      font-size: 1.25rem;
-
-      &:hover {
-        color: $hoverColor;
-      }
-    }
-  }
-
   .footer-text {
     @include flexCenter;
     font-size: 0.8rem;
     color: $paragraphColor;
+
+    span {
+      @include paragraphText;
+    }
   }
 }

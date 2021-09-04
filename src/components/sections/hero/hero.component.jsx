@@ -1,5 +1,7 @@
 import React from "react"
-import './hero.styles.scss'
+import SocialBtns from "../../social-btns/social-btns.component"
+
+import "./hero.styles.scss"
 
 const Hero = () => {
   return (
@@ -12,6 +14,7 @@ const Hero = () => {
         GraphQL, data structures and algorithms areas with eagerness to learn
         and master Back-end Development, Testing and TDD.
       </div>
+      <SocialBtns />
     </div>
   )
 }
