@@ -1,4 +1,8 @@
 import React from "react"
+import { FaGithub } from "react-icons/fa"
+import { FaLinkedin } from "react-icons/fa"
+import { FaEnvelope } from "react-icons/fa"
+
 import "./footer.styles.scss"
 
 const Footer = () => {
@@ -11,7 +15,7 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          GitHub
+          <FaGithub />
         </a>
         <a
           className="social-btn"
@@ -19,10 +23,10 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          LinkedIn
+          <FaLinkedin />
         </a>
         <a className="social-btn" href="mailto:shaineagro06@gmail.com">
-          Email
+          <FaEnvelope />
         </a>
       </div>
       <div className="footer-text">
