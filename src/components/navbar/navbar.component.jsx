@@ -1,5 +1,6 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
+import CustomBtn from "../custom-btn/custom-btn.component"
 import "./navbar.styles.scss"
 
 const Navbar = () => {
@@ -19,7 +20,7 @@ const Navbar = () => {
         <div className="option">About</div>
         <div className="option">Projects</div>
         <div className="option">Contact</div>
-        <button className="resume-btn">Resume</button>
+        <CustomBtn>Resume</CustomBtn>
       </div>
     </nav>
   )

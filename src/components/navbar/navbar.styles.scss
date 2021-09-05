@@ -33,19 +33,4 @@
       }
     }
   }
-
-  .resume-btn {
-    border: none;
-    border-radius: 10px;
-    outline: none;
-    background-color: $btnBgColor;
-    padding: 10px 15px;
-    cursor: pointer;
-    color: $btnTextColor;
-    font-size: 16px;
-
-    &:hover {
-      background-color: $cardBtnBg;
-    }
-  }
 }
