@@ -3,15 +3,19 @@
 
 .footer-container {
   width: 100%;
-  margin: 60px auto 20px;
+  margin: 30px auto 20px;
+
+  .social-container {
+    margin: 10px auto;
+  }
 
   .footer-text {
     @include flexCenter;
-    font-size: 0.8rem;
     color: $paragraphColor;
 
     span {
-      @include paragraphText;
+      @include paragraphStyles;
+      font-size: 0.8rem;
     }
   }
 }

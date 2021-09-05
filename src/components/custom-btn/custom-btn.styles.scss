@@ -1,6 +1,8 @@
 @import "../../styles/themes";
 
 .custom-btn-container {
+  width: auto;
+  height: auto;
   border: none;
   border-radius: 10px;
   outline: none;
@@ -9,13 +11,19 @@
   cursor: pointer;
   color: $btnTextColor;
   font-size: 16px;
-  width: auto;
-  height: auto;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
 
   &:hover {
     background-color: $btnTextColor;
     color: $btnBgColor;
     border: 2px solid $btnBgColor;
+  }
+
+  &.hero {
+    min-width: 165px;
+    width: auto;
+    height: 50px;
+    letter-spacing: 2px;
   }
 }

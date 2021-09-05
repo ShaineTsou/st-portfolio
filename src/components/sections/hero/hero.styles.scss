@@ -1,39 +1,53 @@
 @import "../../../styles/themes";
 @import "../../../styles/mixins";
 
-.hero-container {
-  width: 60%;
-  margin: 20vh auto 30px 10vw;
-  height: 80vh;
+.hero-section-container {
+  width: 100%;
+  margin-top: 12vh;
+  height: 88vh;
 
-  h3 {
-    font-size: 1.75rem;
-    line-height: 1rem;
-    color: $subHeadlineColor;
-  }
+  .hero-content-container {
+    width: 60%;
+    margin-left: 10vw;
+    padding: 10px;
 
-  h1 {
-    font-size: 4.5rem;
-    line-height: 2rem;
-  }
+    h3 {
+      font-size: 1.75rem;
+      line-height: 1rem;
+      color: $subHeadlineColor;
+    }
 
-  h2 {
-    font-size: 3.25rem;
-    line-height: 1.5rem;
-  }
+    h1 {
+      font-size: 4.5rem;
+      line-height: 2rem;
+    }
 
-  .summary {
-    width: 100%;
-    color: $paragraphColor;
-    @include paragraphText;
-    font-size: 1.25rem;
-  }
+    h2 {
+      font-size: 3.25rem;
+      line-height: 1.5rem;
+    }
 
-  .social-container {
-    justify-content: flex-start;
+    .summary {
+      width: 100%;
+      color: $paragraphColor;
+      @include paragraphStyles;
+      font-size: 1.25rem;
+    }
 
-    .social-btn {
-      margin: 0px 15px;
+    .connection-container {
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 30px;
+
+      .social-container {
+        width: 30%;
+        justify-content: flex-start;
+        margin: auto 0px;
+
+        .social-btn {
+          margin: 0px 15px;
+        }
+      }
     }
   }
 }

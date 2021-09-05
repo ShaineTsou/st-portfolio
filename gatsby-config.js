@@ -6,7 +6,15 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: "Shaine Tsou",
+    description:
+      "Shaine Tsou is a Front End Developer with hands-on experience in JavaScript/ES6+, React, GraphQL, data structures and algorithms areas with eagerness to learn and master Back-end Development, Testing and TDD.",
+    author: "Shaine Tsou",
+    contact: "shaineagro06@gmail.com",
+  },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
