@@ -1,0 +1,49 @@
+@import "../../styles/themes";
+@import "../../styles/mixins";
+
+.not-found-container {
+  width: 100%;
+  height: 85vh;
+  padding-top: 50px;
+
+  .not-found-content-container {
+    text-align: center;
+
+    .not-found-img-container {
+      width: 100%;
+
+      img {
+        width: 275px;
+        height: 275px;
+      }
+    }
+
+    h1 {
+      font-size: 3rem;
+      line-height: 1.5rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      line-height: 1rem;
+      color: $subHeadlineColor;
+    }
+
+    .custom-btn-container {
+      margin-top: 20px;
+      padding: 15px 30px;
+      font-size: 1.25rem;
+    }
+  }
+
+  .attribution {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 30%;
+    margin: 7px 20px;
+    text-align: end;
+    @include paragraphStyles;
+    font-size: 0.7rem;
+  }
+}
