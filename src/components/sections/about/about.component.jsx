@@ -18,7 +18,7 @@ const About = () => {
   const { gatsbyImageData } = data.file.childImageSharp
 
   return (
-    <div className="about-section-container">
+    <div className="about-section-container" id="about">
       <h1>About Me</h1>
       <div className="about-content-container">
         <div className="introduction">

@@ -1,4 +1,5 @@
 import React from "react"
+import { navigate } from "@reach/router"
 import SocialBtns from "../../social-btns/social-btns.component"
 import CustomBtn from "../../custom-btn/custom-btn.component"
 
@@ -18,7 +19,9 @@ const Hero = () => {
         </div>
         <div className="connection-container">
           <SocialBtns />
-          <CustomBtn hero>Let's Talk</CustomBtn>
+          <CustomBtn hero onClick={() => navigate("#contact")}>
+            Let's Talk
+          </CustomBtn>
         </div>
       </div>
     </div>
