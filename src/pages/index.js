@@ -9,7 +9,7 @@ import About from "../components/sections/about/about.component"
 export default function Home() {
   return (
     <Layout>
-      <Seo title="Home" />
+      <Seo title="Portfolio" />
       <Hero />
       <About />
     </Layout>
