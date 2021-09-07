@@ -16,6 +16,16 @@
     span {
       @include paragraphStyles;
       font-size: 0.8rem;
+
+      a {
+        margin: auto 0.3rem;
+        @include paragraphStyles;
+        font-size: 0.8rem;
+
+        &:hover {
+          color: $hoverColor;
+        }
+      }
     }
   }
 }

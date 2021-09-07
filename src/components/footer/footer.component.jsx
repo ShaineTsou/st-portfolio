@@ -8,7 +8,16 @@ const Footer = () => {
     <footer className="footer-container">
       <SocialBtns />
       <div className="footer-text">
-        <span>Designed & Built with 🌈 by Shaine Tsou</span>
+        <span>
+          © All rights are reserved | 2021 | Designed & Built with 🌈 by
+          <a
+            href="https://github.com/ShaineTsou"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Shaine Tsou
+          </a>
+        </span>
       </div>
     </footer>
   )
