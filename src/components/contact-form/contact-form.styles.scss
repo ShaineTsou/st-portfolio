@@ -1,0 +1,10 @@
+@import "../../styles/mixins";
+
+.contact-content-container {
+  width: 60%;
+  margin: 0px auto;
+  padding: 10px;
+  // border: 2px solid blue;
+
+  @include mainHeaderStyles;
+}
