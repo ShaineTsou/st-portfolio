@@ -21,6 +21,9 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="options-container">
+        <Link to="/">
+          <div className="option">Home</div>
+        </Link>
         <div className="option" onClick={() => navigate("#about")}>
           About
         </div>
