@@ -4,35 +4,52 @@ import { FaExternalLinkAlt } from "react-icons/fa"
 
 import "./info-card.styles.scss"
 
-const InfoCard = () => {
+const InfoCard = ({ frontmatter, html }) => {
+  const { title, language, github, external, tech } = frontmatter
+  console.log("html", html)
+
   return (
     <div className="info-card-container fun">
       <div className="card-header">
-        <h2>CRWN Clothing</h2>
+        <h2>{title}</h2>
         <div className="links-container">
-          <a className="link" href="" target="_blank" rel="noopener noreferrer">
+          <a
+            className="link"
+            href={github}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaGithub />
           </a>
-          <a className="link" href="" target="_blank" rel="noopener noreferrer">
+          <a
+            className="link"
+            href={external}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaExternalLinkAlt />
           </a>
         </div>
       </div>
       <div className="card-content">
-        <span className="lang">JS</span>
-        <span className="lang">CSS3</span>
-        <span className="lang">HTML5</span>
-        <p>
+        {language.map(lang => (
+          <span className="lang">{lang}</span>
+        ))}
+        {/* <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat modi
           voluptatibus, ex laboriosam tenetur, dolorum assumenda blanditiis
           adipisci error earum tempore officiis nemo nobis exercitationem
           voluptates perspiciatis velit ullam culpa?
-        </p>
+        </p> */}
+        <div
+          className="card-text"
+          dangerouslySetInnerHTML={{ __html: html }}
+        ></div>
       </div>
       <div className="card-tag-container">
-        <span className="card-tag">React</span>
-        <span className="card-tag">CSS-in-JS</span>
-        <span className="card-tag">Firebase</span>
+        {tech.map(tech => (
+          <span className="card-tag">{tech}</span>
+        ))}
       </div>
     </div>
   )

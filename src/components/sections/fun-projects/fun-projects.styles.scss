@@ -1,0 +1,26 @@
+@import "../../../styles/themes";
+@import "../../../styles/mixins";
+
+.fun-projects-section-container {
+  width: 100%;
+  // height: auto;
+  padding: 10vh 0px;
+  // border: 1px solid red;
+  text-align: center;
+  @include mainHeaderStyles;
+
+  .fun-projects-content-container {
+    text-align: start;
+    width: 85%;
+    // height: 50vh;
+    margin: 0px auto;
+    padding: 10px;
+    // border: 1px dashed lightblue;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: center;
+  }
+}

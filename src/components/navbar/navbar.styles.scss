@@ -11,6 +11,7 @@
   justify-content: space-between;
   @include bgStyle;
   opacity: 0.9;
+  z-index: 300;
 
   .icon-container {
     width: 30%;

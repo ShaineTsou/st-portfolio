@@ -6,6 +6,7 @@ import "../styles/global.scss"
 import Hero from "../components/sections/hero/hero.component"
 import About from "../components/sections/about/about.component"
 import Contact from "../components/sections/contact/contact.component"
+import FunProjects from "../components/sections/fun-projects/fun-projects.component"
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Seo title="Portfolio" />
       <Hero />
       <About />
+      <FunProjects />
       <Contact />
     </Layout>
   )
