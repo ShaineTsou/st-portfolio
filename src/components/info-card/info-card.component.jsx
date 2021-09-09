@@ -9,7 +9,7 @@ const InfoCard = ({ frontmatter, html }) => {
   console.log("html", html)
 
   return (
-    <div className="info-card-container fun">
+    <div className="info-card-container">
       <div className="card-header">
         <h2>{title}</h2>
         <div className="links-container">
@@ -35,12 +35,6 @@ const InfoCard = ({ frontmatter, html }) => {
         {language.map(lang => (
           <span className="lang">{lang}</span>
         ))}
-        {/* <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat modi
-          voluptatibus, ex laboriosam tenetur, dolorum assumenda blanditiis
-          adipisci error earum tempore officiis nemo nobis exercitationem
-          voluptates perspiciatis velit ullam culpa?
-        </p> */}
         <div
           className="card-text"
           dangerouslySetInnerHTML={{ __html: html }}

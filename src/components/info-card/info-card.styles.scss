@@ -9,6 +9,7 @@
   top: 0;
   left: 0;
   background-color: $cardBg;
+  border-radius: 30px;
   padding: 10px 10px;
 
   .card-header {
@@ -48,14 +49,14 @@
     padding: 0px 10px;
 
     .lang {
-      margin: 0px 7px;
+      margin-right: 8px;
       font-size: 0.9rem;
       color: $cardHightlight;
     }
 
-    .card-text {
-      color: red;
-    }
+    // .card-text {
+    //   color: $paragraphColor;
+    // }
   }
 
   .card-tag-container {

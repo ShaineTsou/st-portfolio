@@ -1,24 +1,21 @@
 @import "../../../styles/themes";
 @import "../../../styles/mixins";
 
-.fun-projects-section-container {
+.featured-projects-section-container {
   width: 100%;
   padding: 10vh 0px;
   // border: 1px solid red;
   text-align: center;
   @include mainHeaderStyles;
 
-  .fun-projects-content-container {
+  .featured-projects-content-container {
     text-align: start;
-    width: 85%;
+    width: 80%;
     margin: 0px auto;
     padding: 10px;
-    // border: 1px dashed lightblue;
+    // border: 1px dashed lightgoldenrodyellow;
 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
-    justify-items: center;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
   }
 }
