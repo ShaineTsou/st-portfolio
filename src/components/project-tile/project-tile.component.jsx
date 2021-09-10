@@ -10,7 +10,7 @@ const ProjectTile = ({ frontmatter, html }) => {
         <div
           className="background-image"
           style={{
-            backgroundImage: `url(https://unsplash.com/photos/Gi3iUJ1FwxI/download?force=true&w=640)`,
+            backgroundImage: `url(${frontmatter.cover.publicURL})`,
           }}
         />
       </div>

@@ -20,6 +20,9 @@ const FeaturedProjects = () => {
             language
             github
             external
+            cover {
+              publicURL
+            }
           }
         }
       }
