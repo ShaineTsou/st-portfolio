@@ -6,7 +6,6 @@ import "./info-card.styles.scss"
 
 const InfoCard = ({ frontmatter, html }) => {
   const { title, language, github, external, tech } = frontmatter
-  console.log("html", html)
 
   return (
     <div className="info-card-container">
@@ -33,7 +32,9 @@ const InfoCard = ({ frontmatter, html }) => {
       </div>
       <div className="card-content">
         {language.map(lang => (
-          <span className="lang">{lang}</span>
+          <span className="lang" key={`${title}-${lang}`}>
+            {lang}
+          </span>
         ))}
         <div
           className="card-text"
@@ -42,7 +43,9 @@ const InfoCard = ({ frontmatter, html }) => {
       </div>
       <div className="card-tag-container">
         {tech.map(tech => (
-          <span className="card-tag">{tech}</span>
+          <span className="card-tag" key={`${title}-${tech}`}>
+            {tech}
+          </span>
         ))}
       </div>
     </div>

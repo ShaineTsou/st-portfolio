@@ -1,6 +1,5 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import InfoCard from "../../info-card/info-card.component"
 import ProjectTile from "../../project-tile/project-tile.component"
 
 import "./featured-projects.styles.scss"
