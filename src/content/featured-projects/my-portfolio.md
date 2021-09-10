@@ -2,7 +2,7 @@
 category: featured-projects
 priority: 3
 title: My Portfolio
-cover: ./images/thumb-portfolio.png
+cover: ./images/thumbnail-st-portfolio-hero.png
 github: https://github.com/ShaineTsou/st-portfolio
 external: 
 language: 
@@ -14,5 +14,4 @@ tech:
  - Gatsby
  - GraphQL
 ---
-
-**My Portfolio** *ipsum dolor sit amet*, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. *Ut eni
+My personal portfolio to display all the work I've done.

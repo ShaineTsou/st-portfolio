@@ -2,7 +2,7 @@
 category: featured-projects
 priority: 2
 title: Smart Brain
-cover: ./images/thumb-smart-brain.png
+cover: ./images/thumbnail-smart-brain-multiple-detection.png
 github: https://github.com/ShaineTsou/smart-brain
 external: https://smart-brain-st.herokuapp.com/
 language: 
@@ -14,5 +14,4 @@ tech:
  - PostgreSQL
  - API
 ---
-
-**Smart Brain**, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. *Ut enim ad minim veniam*
+A face detection app that allows you to detect as many faces in a picture as you want.

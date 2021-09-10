@@ -9,7 +9,7 @@ const Footer = () => {
       <SocialBtns />
       <div className="footer-text">
         <span>
-          © All rights are reserved | 2021 | Designed & Built with 🌈 by
+          © All rights reserved | 2021 | Designed & Built with 🌈 by
           <a
             href="https://github.com/ShaineTsou"
             target="_blank"

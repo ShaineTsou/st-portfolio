@@ -2,7 +2,7 @@
 category: featured-projects
 priority: 1
 title: CRWN Clothing
-cover: ./images/thumb-clothing.png
+cover: ./images/thumbnail-crwn-clothing-home.png
 github: https://github.com/ShaineTsou/crwn-clothing
 external: https://crwn-st-live.herokuapp.com
 language: 
@@ -13,5 +13,4 @@ tech:
  - CSS-in-JS
  - Firebase
 ---
-
-**CRWN Clothing**, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. *Ut enim ad minim veniam*, quis nostrud exercit
+A fancy clothing e-commerce website easy for you to grab your style.
