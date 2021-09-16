@@ -5,9 +5,10 @@ import "../styles/global.scss"
 
 import Hero from "../components/sections/hero/hero.component"
 import About from "../components/sections/about/about.component"
-import Contact from "../components/sections/contact/contact.component"
+import Skills from "../components/sections/skills/skills.component"
 import FeaturedProjects from "../components/sections/featured-projects/featured-projects.component"
 import FunProjects from "../components/sections/fun-projects/fun-projects.component"
+import Contact from "../components/sections/contact/contact.component"
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Seo title="Portfolio" />
       <Hero />
       <About />
+      <Skills />
       <FeaturedProjects />
       <FunProjects />
       <Contact />

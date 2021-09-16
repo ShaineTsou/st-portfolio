@@ -21,9 +21,10 @@
         margin: auto 0.3rem;
         @include paragraphStyles;
         font-size: 0.8rem;
+        color: $linksColor;
 
         &:hover {
-          color: $hoverColor;
+          text-decoration: underline;
         }
       }
     }

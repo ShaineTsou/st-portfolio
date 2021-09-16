@@ -27,6 +27,9 @@ const Navbar = () => {
         <div className="option" onClick={() => navigate("#about")}>
           About
         </div>
+        <div className="option" onClick={() => navigate("#skills")}>
+          Skills
+        </div>
         <div className="option" onClick={() => navigate("#projects")}>
           Projects
         </div>

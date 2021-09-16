@@ -54,9 +54,19 @@
       color: $cardHightlight;
     }
 
-    // .card-text {
-    //   color: $paragraphColor;
-    // }
+    .card-text {
+      * {
+        color: $paragraphColor;
+      }
+
+      a {
+        color: $linksColor;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
   }
 
   .card-tag-container {
