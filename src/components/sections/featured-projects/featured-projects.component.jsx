@@ -32,14 +32,14 @@ const FeaturedProjects = () => {
   const { nodes } = data.allMarkdownRemark
 
   return (
-    <div className="featured-projects-section-container" id="projects">
+    <section className="featured-projects-section-container" id="projects">
       <h1>Featured Projects</h1>
       <div className="featured-projects-content-container">
         {nodes.map(({ frontmatter, html, id }) => (
           <ProjectTile frontmatter={frontmatter} html={html} key={id} />
         ))}
       </div>
-    </div>
+    </section>
   )
 }
 

@@ -29,14 +29,14 @@ const FunProjects = () => {
   const { nodes } = data.allMarkdownRemark
 
   return (
-    <div className="fun-projects-section-container">
+    <section className="fun-projects-section-container">
       <h1>Just For Fun</h1>
       <div className="fun-projects-content-container">
         {nodes.map(({ frontmatter, html, id }) => (
           <InfoCard frontmatter={frontmatter} html={html} key={id} />
         ))}
       </div>
-    </div>
+    </section>
   )
 }
 

@@ -7,7 +7,7 @@ import "./hero.styles.scss"
 
 const Hero = () => {
   return (
-    <div className="hero-section-container">
+    <section className="hero-section-container">
       <div className="hero-content-container">
         <h3>Hellooo! I am</h3>
         <h1>Shaine Tsou</h1>
@@ -24,7 +24,7 @@ const Hero = () => {
           </CustomBtn>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

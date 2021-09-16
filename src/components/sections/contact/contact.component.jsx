@@ -5,9 +5,9 @@ import "./contact.styles.scss"
 
 const Contact = () => {
   return (
-    <div className="contact-section-container" id="contact">
+    <section className="contact-section-container" id="contact">
       <ContactForm />
-    </div>
+    </section>
   )
 }
 
