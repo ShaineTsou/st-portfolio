@@ -41,5 +41,12 @@ module.exports = {
         path: `${__dirname}/src/content/fun-projects/`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `skills`,
+        path: `${__dirname}/src/content/skills/`,
+      },
+    },
   ],
 }

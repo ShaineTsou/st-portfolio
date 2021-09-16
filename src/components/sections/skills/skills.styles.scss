@@ -4,15 +4,15 @@
 .skills-section-container {
   width: 100%;
   @include flexCenter;
-  border: 2px solid red;
+  // border: 2px solid red;
 
   .skills-content-container {
-    width: 70%;
+    width: 80%;
     padding: 30px 0;
     @include mainHeaderStyles;
 
     @include flexCenter;
     flex-direction: column;
-    border: 2px solid blue;
+    // border: 2px solid blue;
   }
 }

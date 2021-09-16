@@ -1,0 +1,24 @@
+@import "../../styles/mixins";
+@import "../../styles/themes";
+
+.skill-box {
+  @include flexCenter;
+  flex-direction: column;
+  margin: 15px;
+  padding: 15px 10px;
+  border-radius: 10px;
+  background-color: $cardBg;
+
+  .skill-icon-container {
+    @include flexCenter;
+
+    .skill-icon {
+      font-size: 3rem;
+    }
+  }
+
+  .skill-title {
+    margin-top: 5px;
+    font-weight: 700;
+  }
+}

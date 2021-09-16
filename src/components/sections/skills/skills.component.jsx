@@ -9,7 +9,7 @@ const Skills = () => {
     <section className="skills-section-container" id="skills">
       <div className="skills-content-container">
         <h1>Skills</h1>
-        <SkillsGroup />
+        <SkillsGroup group="Programming Languages" />
       </div>
     </section>
   )

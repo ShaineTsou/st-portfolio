@@ -4,15 +4,15 @@
   width: 100%;
   @include flexCenter;
   flex-direction: column;
-  border: 1px solid lightgoldenrodyellow;
-  padding: 20px 0;
+  // border: 1px solid lightgoldenrodyellow;
 
   @include subHeaderStyles;
 
   .boxes-container {
     display: flex;
-    justify-content: space-evenly;
-    border: 1px solid lightgreen;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    // border: 1px solid lightgreen;
     width: 100%;
     padding: 10px 0;
   }
