@@ -30,7 +30,7 @@ const FunProjects = () => {
 
   return (
     <section className="fun-projects-section-container">
-      <h1>Just For Fun</h1>
+      <h1>Fun Projects</h1>
       <div className="fun-projects-content-container">
         {nodes.map(({ frontmatter, html, id }) => (
           <InfoCard frontmatter={frontmatter} html={html} key={id} />
