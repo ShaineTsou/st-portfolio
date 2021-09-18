@@ -4,13 +4,17 @@ import { FaExternalLinkAlt } from "react-icons/fa"
 
 import "./info-card.styles.scss"
 
-const InfoCard = ({ frontmatter, html }) => {
+const InfoCard = ({ frontmatter, html, ...otherProps }) => {
   const { title, language, github, external, tech } = frontmatter
 
   return (
-    <div className="info-card-container">
+    <div
+      className={`info-card-container ${
+        otherProps.featured ? "featured" : ""
+      } ${otherProps.fun ? "fun" : ""}`}
+    >
       <div className="card-header">
-        <h2>{title}</h2>
+        <h2 className="card-title">{title}</h2>
         <div className="links-container">
           <a
             className="link"
@@ -30,18 +34,18 @@ const InfoCard = ({ frontmatter, html }) => {
           </a>
         </div>
       </div>
-      <div className="card-content">
+      <div className="card-languages">
         {language.map(lang => (
-          <span className="lang" key={`${title}-${lang}`}>
+          <span className="card-lang" key={`${title}-${lang}`}>
             {lang}
           </span>
         ))}
-        <div
-          className="card-text"
-          dangerouslySetInnerHTML={{ __html: html }}
-        ></div>
       </div>
-      <div className="card-tag-container">
+      <div
+        className="card-text"
+        dangerouslySetInnerHTML={{ __html: html }}
+      ></div>
+      <div className="card-tags">
         {tech.map(tech => (
           <span className="card-tag" key={`${title}-${tech}`}>
             {tech}

@@ -15,8 +15,7 @@ const Navbar = () => {
             alt="website icon"
             placeholder="blurred"
             layout="fixed"
-            width={60}
-            height={60}
+            height={50}
           />
         </Link>
       </div>

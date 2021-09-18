@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import ProjectTile from "../../project-tile/project-tile.component"
+import ProjectCover from "../../project-cover/project-cover.component"
+import InfoCard from "../../info-card/info-card.component"
 
 import "./featured-projects.styles.scss"
 
@@ -36,7 +37,10 @@ const FeaturedProjects = () => {
       <h1>Featured Projects</h1>
       <div className="featured-projects-content-container">
         {nodes.map(({ frontmatter, html, id }) => (
-          <ProjectTile frontmatter={frontmatter} html={html} key={id} />
+          <div className="featured-project-tile" key={id}>
+            <ProjectCover featured frontmatter={frontmatter} />
+            <InfoCard featured frontmatter={frontmatter} html={html} />
+          </div>
         ))}
       </div>
     </section>

@@ -2,6 +2,7 @@
 category: fun-projects
 date: 2021-08-10
 title: Quote Generator
+cover: ./images/thumbnail-quote-generator.png
 github: https://github.com/ShaineTsou/quote-generator
 external: https://shainetsou.github.io/quote-generator/
 language: 

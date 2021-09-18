@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import ProjectCover from "../../project-cover/project-cover.component"
 import InfoCard from "../../info-card/info-card.component"
 
 import "./fun-projects.styles.scss"
@@ -20,6 +21,9 @@ const FunProjects = () => {
             language
             github
             external
+            cover {
+              publicURL
+            }
           }
         }
       }
@@ -33,7 +37,10 @@ const FunProjects = () => {
       <h1>Fun Projects</h1>
       <div className="fun-projects-content-container">
         {nodes.map(({ frontmatter, html, id }) => (
-          <InfoCard frontmatter={frontmatter} html={html} key={id} />
+          <div className="fun-project-tile" key={id}>
+            <ProjectCover fun frontmatter={frontmatter} />
+            <InfoCard fun frontmatter={frontmatter} html={html} />
+          </div>
         ))}
       </div>
     </section>
