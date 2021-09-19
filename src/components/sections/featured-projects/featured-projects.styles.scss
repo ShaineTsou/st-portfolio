@@ -4,29 +4,19 @@
 .featured-projects-section-container {
   width: 100%;
   padding: 10vh 0px;
-  // border: 1px solid red;
   @include flexCenter;
   flex-direction: column;
   @include mainHeaderStyles;
 
   .featured-projects-content-container {
     width: 80%;
-    // border: 1px dashed lightgoldenrodyellow;
+    @include flexCenter;
+    flex-direction: column;
 
     .featured-project-tile {
-      @include flexCenter;
-      // border: 1px solid $cardBorder;
-      border-radius: 20px;
-      margin: 130px 0;
-
-      // &:hover {
-      //   & .background-image {
-      //     transform: scale(1.1);
-      //     transition: transform 1.5s cubic-bezier(0.25, 0.45, 0.45, 0.95);
-      //   }
-
-      //   cursor: pointer;
-      // }
+      width: 75%;
+      margin: 60px 0;
+      position: relative;
     }
   }
 }

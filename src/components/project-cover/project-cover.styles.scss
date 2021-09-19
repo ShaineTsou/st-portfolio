@@ -2,20 +2,21 @@
 
 .project-cover-container {
   &.featured {
-    width: 70%;
-    overflow: hidden;
+    width: 100%;
+    height: auto;
+    transform: translate(-15%, 0%);
 
-    .background-image {
-      // display: block;
-      // max-width: 230px;
-      // max-height: 95px;
-      // width: auto;
-      // height: auto;
-
-      // width: 500px;
-      height: 450px;
+    .cover-image {
+      border: 2px solid $cardBorder;
+      border-radius: 15px;
+      width: 100%;
+      height: 100%;
       background-size: cover;
       background-position: center;
+
+      &:hover {
+        filter: drop-shadow(0 0 0.5rem $cardHightlight);
+      }
     }
   }
 
@@ -25,7 +26,7 @@
     border-radius: 20px 20px 0 0;
     overflow: hidden;
 
-    .background-image {
+    .cover-image {
       width: 100%;
       height: 100%;
       background-size: cover;

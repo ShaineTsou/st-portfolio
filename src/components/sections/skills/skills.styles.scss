@@ -4,7 +4,6 @@
 .skills-section-container {
   width: 100%;
   @include flexCenter;
-  // border: 2px solid red;
 
   .skills-content-container {
     width: 80%;
@@ -13,6 +12,5 @@
 
     @include flexCenter;
     flex-direction: column;
-    // border: 2px solid blue;
   }
 }

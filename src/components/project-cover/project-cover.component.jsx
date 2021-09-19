@@ -4,21 +4,19 @@ import "./project-cover.styles.scss"
 
 const ProjectCover = ({ frontmatter, ...otherProps }) => {
   return (
-    <a
+    <div
       className={`project-cover-container ${
         otherProps.featured ? "featured" : ""
       } ${otherProps.fun ? "fun" : ""}`}
-      href={frontmatter.github}
-      target="_blank"
-      rel="noopener noreferrer"
     >
-      <div
-        className="background-image"
-        style={{
-          backgroundImage: `url(${frontmatter.cover.publicURL})`,
-        }}
-      />
-    </a>
+      <a href={frontmatter.github} target="_blank" rel="noopener noreferrer">
+        <img
+          className="cover-image"
+          src={frontmatter.cover.publicURL}
+          alt={`${frontmatter.title}`}
+        />
+      </a>
+    </div>
   )
 }
 

@@ -3,16 +3,20 @@
 
 .info-card-container {
   &.featured {
-    width: 30%;
+    width: 375px;
     min-height: 350px;
+    position: absolute;
+    right: -20%;
+    top: 35%;
     display: flex;
     flex-direction: column;
-    position: relative;
-    top: 100px;
-    left: -75px;
     background-color: $cardBg;
-    // border-radius: 0 20px 20px 0;
-    // overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid $cardParagraph;
+
+    &:hover {
+      filter: drop-shadow(0 0 0.35rem $cardParagraph);
+    }
 
     .card-header {
       width: 100%;
@@ -23,14 +27,14 @@
 
       .card-title {
         margin: 0;
-        width: 80%;
-        font-size: 1.3em;
+        width: 75%;
+        font-size: 1.75rem;
         text-align: start;
         font-weight: 700;
       }
 
       .links-container {
-        width: 20%;
+        width: 25%;
         height: 100%;
         display: flex;
         justify-content: end;
@@ -38,9 +42,9 @@
 
         .link {
           @include flexCenter;
-          margin: 5px;
+          margin: 7px;
           color: $paragraphColor;
-          font-size: 1.1em;
+          font-size: 1.5em;
 
           &:hover {
             color: $hoverColor;
@@ -58,7 +62,6 @@
 
       .card-lang {
         margin-right: 8px;
-        font-size: 0.85rem;
         color: $cardHightlight;
       }
     }
@@ -72,6 +75,7 @@
         margin: 0;
         padding: 0;
         color: $cardParagraph;
+        font-size: 1.15rem;
       }
 
       a {
@@ -99,7 +103,7 @@
         padding: 5px 10px;
         background-color: $cardTagBg;
         border-radius: 10px;
-        font-size: 0.8rem;
+        font-size: 0.95rem;
       }
     }
   }
