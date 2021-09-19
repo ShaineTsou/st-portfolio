@@ -47,7 +47,9 @@
           font-size: 1.5em;
 
           &:hover {
-            color: $hoverColor;
+            * {
+              color: $hoverColor;
+            }
           }
         }
       }
@@ -144,10 +146,12 @@
           @include flexCenter;
           margin: 5px;
           color: $paragraphColor;
-          font-size: 1.1em;
+          font-size: 1.2em;
 
           &:hover {
-            color: $hoverColor;
+            * {
+              color: $hoverColor;
+            }
           }
         }
       }
@@ -203,7 +207,7 @@
         padding: 5px 10px;
         background-color: $cardTagBg;
         border-radius: 10px;
-        font-size: 0.8rem;
+        font-size: 0.85rem;
       }
     }
   }

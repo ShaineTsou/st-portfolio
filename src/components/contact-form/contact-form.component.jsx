@@ -42,6 +42,11 @@ const ContactForm = () => {
         ...state,
       }),
     })
+      .then(() =>
+        alert(
+          "Thank you for contacting me! I will respond as soon as possible :)"
+        )
+      )
       .then(() => navigate(form.getAttribute("action")))
       .catch(error => alert(error))
   }
