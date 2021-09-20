@@ -14,13 +14,19 @@
   @include bgStyle;
   opacity: 0.9;
   z-index: 2000;
+  transition: top 0.5s;
+
+  &.navbar-hidden {
+    top: -70px;
+  }
 
   .icon-container {
     width: 30%;
-    cursor: pointer;
 
-    &:hover {
-      filter: contrast(110%) brightness(125%);
+    .navbar-icon {
+      &:hover {
+        filter: contrast(110%) brightness(125%);
+      }
     }
   }
 
@@ -31,8 +37,11 @@
     align-items: center;
 
     .option {
-      padding: 10px 20px;
+      padding: 0px 20px;
+      font-size: 1.1rem;
       cursor: pointer;
+      background: transparent;
+      border: none;
 
       &:hover {
         color: $hoverColor;
@@ -43,9 +52,12 @@
   .bars {
     display: none;
     font-size: 1.5rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
 
     &:hover {
-      cursor: pointer;
+      color: $hoverColor;
 
       * {
         color: $hoverColor;
@@ -65,25 +77,24 @@
     &.responsive {
       .options-container {
         width: 100%;
+        height: calc(100vh - 70px);
         position: absolute;
         top: 70px;
         left: 0;
         @include flexCenter;
         flex-direction: column;
         @include bgStyle;
-        opacity: 1;
-        box-shadow: 1px 1px 5px rgb(95, 95, 95);
 
         .option {
           width: 100%;
           text-align: center;
-          padding: 15px 0;
-          font-size: 1.25rem;
+          padding: 20px 0;
+          font-size: 1.5rem;
         }
 
         :last-child {
-          font-size: 1.1rem;
-          margin: 10px 0;
+          font-size: 1.25rem;
+          margin: 20px 0;
         }
       }
     }
