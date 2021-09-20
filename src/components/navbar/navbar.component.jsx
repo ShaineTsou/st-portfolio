@@ -9,12 +9,15 @@ import "./navbar.styles.scss"
 class Navbar extends React.Component {
   state = {
     navbarHidden: false,
-    prevScrollPos: window.pageYOffset,
+    prevScrollPos: 0,
     optionsHidden: true,
   }
 
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll)
+    this.setState({
+      prevScrollPos: window.pageYOffset,
+    })
   }
 
   componentWillUnmount() {
