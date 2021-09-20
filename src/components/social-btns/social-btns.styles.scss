@@ -3,17 +3,32 @@
 
 .social-container {
   @include flexCenter;
-  width: 100%;
-  margin: 30px auto;
 
   .social-btn {
+    @include flexCenter;
     margin: 0px 20px;
-    color: $paragraphColor;
     font-size: 1.5rem;
 
     &:hover {
       * {
         color: $hoverColor;
+      }
+    }
+  }
+
+  &.hero {
+    justify-content: flex-start;
+    margin-right: 15px;
+
+    .social-btn {
+      font-size: 1.6rem;
+    }
+
+    @media screen and (max-width: 650px) {
+      margin: 10px 0px;
+      .social-btn {
+        margin: 0px 15px;
+        font-size: 1.3rem;
       }
     }
   }

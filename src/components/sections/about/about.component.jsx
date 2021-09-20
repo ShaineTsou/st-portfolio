@@ -1,22 +1,9 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
+import { StaticImage } from "gatsby-plugin-image"
 
 import "./about.styles.scss"
 
 const About = () => {
-  const data = useStaticQuery(graphql`
-    query AboutAvatar {
-      file(relativePath: { eq: "about-avatar.jpg" }) {
-        childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
-        }
-      }
-    }
-  `)
-
-  const { gatsbyImageData } = data.file.childImageSharp
-
   return (
     <section className="about-section-container" id="about">
       <h1>About Me</h1>
@@ -29,7 +16,12 @@ const About = () => {
           elit. Maecenas luctus at sem quis varius.
         </div>
         <div className="avatar-container">
-          <GatsbyImage image={gatsbyImageData} alt="avatar" />
+          <StaticImage
+            className="navbar-icon"
+            src="../../../images/about-avatar.png"
+            alt="avatar"
+            placeholder="blurred"
+          />
         </div>
       </div>
     </section>

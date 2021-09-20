@@ -1,19 +1,15 @@
 @import "../../styles/themes";
 
 .custom-btn-container {
-  width: auto;
-  height: auto;
-  border: none;
+  border: 2px solid transparent;
   border-radius: 10px;
-  outline: none;
   background-color: $btnBgColor;
   padding: 10px 15px;
   cursor: pointer;
   color: $btnTextColor;
-  font-size: 16px;
+  font-size: 0.9rem;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  border: 2px solid transparent;
 
   &:hover {
     background-color: $btnTextColor;
@@ -23,8 +19,12 @@
 
   &.hero {
     min-width: 165px;
-    width: auto;
-    height: 50px;
+    padding: 15px;
     letter-spacing: 2px;
+
+    @media screen and (max-width: 480px) {
+      padding: 10px 0px;
+      letter-spacing: 1.5px;
+    }
   }
 }

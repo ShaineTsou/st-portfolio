@@ -18,7 +18,7 @@ const Hero = () => {
           learn and master Back-end Development, Testing and TDD.
         </div>
         <div className="connection-container">
-          <SocialBtns />
+          <SocialBtns hero />
           <CustomBtn hero onClick={() => navigate("#contact")}>
             Let's Talk
           </CustomBtn>

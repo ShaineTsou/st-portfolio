@@ -5,9 +5,9 @@ import { FaEnvelope } from "react-icons/fa"
 
 import "./social-btns.styles.scss"
 
-const SocialBtns = () => {
+const SocialBtns = ({ ...otherProps }) => {
   return (
-    <div className="social-container">
+    <div className={`${otherProps.hero ? "hero" : ""} social-container`}>
       <a
         className="social-btn"
         href="https://github.com/ShaineTsou"
