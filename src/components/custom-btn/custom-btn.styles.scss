@@ -13,6 +13,7 @@
   font-size: 16px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
+  border: 2px solid transparent;
 
   &:hover {
     background-color: $btnTextColor;

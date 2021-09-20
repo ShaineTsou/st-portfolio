@@ -4,7 +4,7 @@ priority: 3
 title: My Portfolio
 cover: ./images/thumbnail-st-portfolio-hero.png
 github: https://github.com/ShaineTsou/st-portfolio
-external: 
+external: https://st-portfolio.netlify.app
 language: 
  - JavaScript
  - Sass
