@@ -6,10 +6,10 @@ import "./footer.styles.scss"
 const Footer = () => {
   return (
     <footer className="footer-container">
-      <SocialBtns />
+      <SocialBtns footer />
       <div className="footer-text">
         <span>
-          © All rights reserved | 2021 | Designed & Built with 🌈 by
+          Designed & Built with 🌈 by
           <a
             href="https://github.com/ShaineTsou"
             target="_blank"

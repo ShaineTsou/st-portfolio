@@ -7,7 +7,11 @@ import "./social-btns.styles.scss"
 
 const SocialBtns = ({ ...otherProps }) => {
   return (
-    <div className={`${otherProps.hero ? "hero" : ""} social-container`}>
+    <div
+      className={`${otherProps.hero ? "hero" : ""} ${
+        otherProps.footer ? "footer" : ""
+      } social-container`}
+    >
       <a
         className="social-btn"
         href="https://github.com/ShaineTsou"

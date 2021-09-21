@@ -32,5 +32,13 @@
       background-size: cover;
       background-position: center;
     }
+
+    @media screen and (max-width: 480px) {
+      // show project cover in mobile view
+      // height: 160px;
+
+      // hide project cover in mobile view
+      height: 0px;
+    }
   }
 }

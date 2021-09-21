@@ -3,7 +3,7 @@
 
 .fun-projects-section-container {
   width: 100%;
-  padding: 10vh 0px;
+  padding-top: 50px;
   @include flexCenter;
   flex-direction: column;
   @include mainHeaderStyles;
@@ -28,6 +28,10 @@
           transition: transform 1.5s cubic-bezier(0.25, 0.45, 0.45, 0.95);
         }
       }
+    }
+
+    @media screen and (max-width: 480px) {
+      width: 100%;
     }
   }
 }

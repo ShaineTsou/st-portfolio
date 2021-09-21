@@ -18,12 +18,12 @@
     font-size: 2.5rem;
     line-height: 2rem;
 
-    @media all and (max-width: 768px) {
+    @media screen and (max-width: 768px) {
       font-size: 2.25rem;
       line-height: 1.8rem;
     }
 
-    @media all and (max-width: 480px) {
+    @media screen and (max-width: 480px) {
       margin: 30px 0;
       font-size: 2rem;
       line-height: 1.6rem;
@@ -37,11 +37,11 @@
     line-height: 0.75rem;
     color: $subHeadlineColor;
 
-    @media all and (max-width: 768px) {
+    @media screen and (max-width: 768px) {
       font-size: 1.5rem;
     }
 
-    @media all and (max-width: 480px) {
+    @media screen and (max-width: 480px) {
       font-size: 1.5rem;
       line-height: 0.5rem;
     }

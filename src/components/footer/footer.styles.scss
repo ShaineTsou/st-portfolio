@@ -3,28 +3,45 @@
 
 .footer-container {
   width: 100%;
-  margin: 30px auto 20px;
+  height: 90px;
+  @include flexCenter;
+  flex-direction: column;
+  background: linear-gradient(
+    to bottom,
+    rgba(15, 14, 23, 0),
+    rgba(15, 14, 23, 1)
+  );
 
   .social-container {
-    margin: 10px auto;
+    width: 100%;
+    padding: 5px 0;
   }
 
   .footer-text {
-    @include flexCenter;
-    color: $paragraphColor;
+    width: 100%;
+    text-align: center;
+    padding: 5px 10px;
 
     span {
       @include paragraphStyles;
       font-size: 0.8rem;
 
       a {
-        margin: auto 0.3rem;
+        margin: 0 0.3rem;
         @include paragraphStyles;
         font-size: 0.8rem;
         color: $linksColor;
 
         &:hover {
           text-decoration: underline;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        font-size: 0.7rem;
+
+        a {
+          font-size: 0.7rem;
         }
       }
     }

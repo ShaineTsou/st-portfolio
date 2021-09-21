@@ -3,22 +3,21 @@
 
 .skills-section-container {
   width: 100%;
-  padding-top: 70px;
+  padding-top: 50px;
   @include flexCenter;
 
   .skills-content-container {
-    // border: 1px solid lightblue;
     width: 80%;
     @include mainHeaderStyles;
 
     @include flexCenter;
     flex-direction: column;
 
-    @media all and (max-width: 768px) {
+    @media screen and (max-width: 768px) {
       width: 90%;
     }
 
-    @media all and (max-width: 480px) {
+    @media screen and (max-width: 480px) {
       width: 100%;
     }
   }
