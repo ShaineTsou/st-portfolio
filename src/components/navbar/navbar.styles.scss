@@ -75,7 +75,11 @@
     }
 
     &.responsive {
+      background-image: none;
+      opacity: 1;
+
       .options-container {
+        background-color: $bgColor;
         width: 100%;
         height: calc(100vh - 70px);
         position: absolute;
@@ -83,7 +87,6 @@
         left: 0;
         @include flexCenter;
         flex-direction: column;
-        @include bgStyle;
 
         .option {
           width: 100%;
