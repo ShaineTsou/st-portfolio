@@ -3,11 +3,13 @@
 
 .not-found-container {
   width: 100%;
-  height: 85vh;
-  padding-top: 50px;
+  min-height: calc(100vh - 90px);
+  padding-top: 70px;
 
   .not-found-content-container {
     text-align: center;
+    width: 85%;
+    margin: 0 auto;
 
     .not-found-img-container {
       width: 100%;
@@ -18,14 +20,13 @@
       }
     }
 
-    h1 {
-      font-size: 3rem;
+    .notfound-maintitle {
+      font-size: 2.75rem;
       line-height: 1.5rem;
     }
 
-    h2 {
-      font-size: 2rem;
-      line-height: 1rem;
+    .notfound-subtitle {
+      font-size: 1.75rem;
       color: $subHeadlineColor;
     }
 
@@ -34,16 +35,29 @@
       padding: 15px 30px;
       font-size: 1.25rem;
     }
-  }
 
-  .attribution {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 30%;
-    margin: 7px 20px;
-    text-align: end;
-    @include paragraphStyles;
-    font-size: 0.7rem;
+    @media screen and (max-width: 480px) {
+      .not-found-img-container {
+        img {
+          width: 250px;
+          height: 250px;
+        }
+      }
+
+      .notfound-maintitle {
+        font-size: 2.25rem;
+        line-height: 1.25rem;
+      }
+
+      .notfound-subtitle {
+        font-size: 1.25rem;
+      }
+
+      .custom-btn-container {
+        margin-top: 15px;
+        padding: 10px 20px;
+        font-size: 1rem;
+      }
+    }
   }
 }

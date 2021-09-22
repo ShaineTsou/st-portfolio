@@ -24,12 +24,13 @@ const NotFound = () => {
         <div className="not-found-img-container">
           <GatsbyImage image={gatsbyImageData} alt="not found image" />
         </div>
-        <h1>404</h1>
-        <h2> 😱 Caution! This page is about to crumble! 😱 </h2>
+        <h1 className="notfound-maintitle">😱 404 😱</h1>
+        <h2 className="notfound-subtitle">
+          Caution! This page is about to crumble!
+        </h2>
         <Link to="/">
           <CustomBtn>Get Me Out Of Here !</CustomBtn>
         </Link>
-        <div className="attribution">Image curated by Kapwing</div>
       </div>
     </div>
   )

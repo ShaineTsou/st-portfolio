@@ -3,7 +3,7 @@
 .project-cover-container {
   &.featured {
     width: 100%;
-    height: auto;
+    height: 100%;
     transform: translate(-15%, 0%);
 
     .cover-image {
@@ -16,6 +16,19 @@
 
       &:hover {
         filter: drop-shadow(0 0 0.5rem $cardHightlight);
+      }
+    }
+
+    @media screen and (max-width: 1024px) {
+      transform: translate(-10%, 0%);
+    }
+
+    @media screen and (max-width: 768px) {
+      transform: none;
+      .cover-image {
+        height: 100%;
+        border: none;
+        border-radius: 20px 20px 0 0;
       }
     }
   }
@@ -34,10 +47,6 @@
     }
 
     @media screen and (max-width: 480px) {
-      // show project cover in mobile view
-      // height: 160px;
-
-      // hide project cover in mobile view
       height: 0px;
     }
   }

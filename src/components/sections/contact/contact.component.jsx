@@ -45,6 +45,14 @@ const Contact = () => {
       .then(() => alert("Thank you for reaching out to me :)"))
       .then(() => navigate(form.getAttribute("action")))
       .catch(error => alert(error))
+
+    // Clear Form
+    setState({
+      name: "",
+      email: "",
+      message: "",
+      botField: "",
+    })
   }
 
   return (

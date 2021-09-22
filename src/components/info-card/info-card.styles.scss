@@ -1,9 +1,55 @@
 @import "../../styles/themes";
 @import "../../styles/mixins";
 
+@mixin infoCardMobile480 {
+  .card-header {
+    padding-left: 10px;
+
+    .card-title {
+      font-size: 1.15rem;
+    }
+
+    .links-container {
+      .link {
+        color: $paragraphColor;
+        font-size: 1rem;
+
+        &:hover {
+          * {
+            color: $hoverColor;
+          }
+        }
+      }
+    }
+  }
+
+  .card-languages {
+    padding-left: 10px;
+
+    .card-lang {
+      font-size: 0.75rem;
+    }
+  }
+
+  .card-text {
+    padding: 10px 15px;
+    text-align: start;
+    font-size: 0.9rem;
+  }
+
+  .card-tags {
+    padding: 8px;
+
+    .card-tag {
+      padding: 5px 5px;
+      font-size: 0.75rem;
+    }
+  }
+}
+
 .info-card-container {
   &.featured {
-    width: 375px;
+    width: 350px;
     min-height: 350px;
     position: absolute;
     right: -20%;
@@ -43,7 +89,6 @@
         .link {
           @include flexCenter;
           margin: 7px;
-          color: $paragraphColor;
           font-size: 1.5em;
 
           &:hover {
@@ -106,6 +151,32 @@
         background-color: $cardTagBg;
         border-radius: 10px;
         font-size: 0.95rem;
+      }
+    }
+
+    @media screen and (max-width: 1024px) {
+      right: -15%;
+      width: 325px;
+    }
+
+    @media screen and (max-width: 768px) {
+      position: relative;
+      top: 0;
+      right: 0;
+      width: 100%;
+      min-height: 250px;
+      border: none;
+      border-radius: 0 0 20px 20px;
+    }
+
+    @media screen and (max-width: 480px) {
+      @include infoCardMobile480();
+      min-height: 225px;
+
+      .card-text {
+        * {
+          font-size: 0.9rem;
+        }
       }
     }
   }
@@ -213,53 +284,8 @@
 
     @media screen and (max-width: 480px) {
       width: 285px;
-
-      // When project cover is hidden in mobile view
       border-radius: 20px;
-
-      .card-header {
-        padding-left: 10px;
-
-        .card-title {
-          font-size: 1.15rem;
-        }
-
-        .links-container {
-          .link {
-            color: $paragraphColor;
-            font-size: 1rem;
-
-            &:hover {
-              * {
-                color: $hoverColor;
-              }
-            }
-          }
-        }
-      }
-
-      .card-languages {
-        padding-left: 10px;
-
-        .card-lang {
-          font-size: 0.75rem;
-        }
-      }
-
-      .card-text {
-        padding: 10px 15px;
-        text-align: start;
-        font-size: 0.9rem;
-      }
-
-      .card-tags {
-        padding: 8px;
-
-        .card-tag {
-          padding: 5px 5px;
-          font-size: 0.75rem;
-        }
-      }
+      @include infoCardMobile480();
     }
   }
 }
