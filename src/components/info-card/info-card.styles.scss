@@ -179,6 +179,10 @@
         }
       }
     }
+
+    @media screen and (max-width: 320px) {
+      min-height: 250px;
+    }
   }
 
   &.fun {
@@ -286,6 +290,11 @@
       width: 285px;
       border-radius: 20px;
       @include infoCardMobile480();
+    }
+
+    @media screen and (max-width: 320px) {
+      width: 200px;
+      min-height: 250px;
     }
   }
 }

@@ -44,6 +44,14 @@
           font-size: 0.7rem;
         }
       }
+
+      @media screen and (max-width: 320px) {
+        font-size: 0.6rem;
+
+        a {
+          font-size: 0.6rem;
+        }
+      }
     }
   }
 }

@@ -28,6 +28,11 @@
       font-size: 2rem;
       line-height: 1.6rem;
     }
+
+    @media screen and (max-width: 320px) {
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+    }
   }
 }
 
@@ -44,6 +49,11 @@
     @media screen and (max-width: 480px) {
       font-size: 1.5rem;
       line-height: 0.5rem;
+    }
+
+    @media screen and (max-width: 320px) {
+      font-size: 1.25rem;
+      line-height: 1.25rem;
     }
   }
 }

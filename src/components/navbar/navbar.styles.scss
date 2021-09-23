@@ -101,6 +101,20 @@
           margin: 20px 0;
         }
       }
+
+      @media screen and (max-width: 320px) {
+        .options-container {
+          .option {
+            padding: 8px 0;
+            font-size: 1.1rem;
+          }
+
+          :last-child {
+            font-size: 0.8rem;
+            margin: 5px 0;
+          }
+        }
+      }
     }
   }
 }
