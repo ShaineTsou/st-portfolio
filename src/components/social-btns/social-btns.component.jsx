@@ -1,7 +1,8 @@
 import React from "react"
+import { FaEnvelope } from "react-icons/fa"
 import { FaGithub } from "react-icons/fa"
 import { FaLinkedin } from "react-icons/fa"
-import { FaEnvelope } from "react-icons/fa"
+import { FaTwitter } from "react-icons/fa"
 
 import "./social-btns.styles.scss"
 
@@ -12,6 +13,9 @@ const SocialBtns = ({ ...otherProps }) => {
         otherProps.footer ? "footer" : ""
       } social-container`}
     >
+      <a className="social-btn" href="mailto:shaineagro06@gmail.com">
+        <FaEnvelope />
+      </a>
       <a
         className="social-btn"
         href="https://github.com/ShaineTsou"
@@ -28,8 +32,13 @@ const SocialBtns = ({ ...otherProps }) => {
       >
         <FaLinkedin />
       </a>
-      <a className="social-btn" href="mailto:shaineagro06@gmail.com">
-        <FaEnvelope />
+      <a
+        className="social-btn"
+        href="https://twitter.com/ShaineTsou"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaTwitter />
       </a>
     </div>
   )
