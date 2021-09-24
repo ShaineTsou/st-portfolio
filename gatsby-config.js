@@ -48,5 +48,30 @@ module.exports = {
         path: `${__dirname}/src/content/skills/`,
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Shaine Tsou`,
+        short_name: `ST`,
+        start_url: `/`,
+        background_color: `#2c2c2c`,
+        theme_color: `#2c2c2c`,
+        display: `standalone`,
+        icon: `src/images/icon-raw.png`,
+        icons: [
+          {
+            src: `/favicons/android-chrome-192x192.png`,
+            sizes: `192x192`,
+            type: `image/png`,
+          },
+          {
+            src: `/favicons/android-chrome-512x512.png`,
+            sizes: `512x512`,
+            type: `image/png`,
+          },
+        ],
+      },
+    },
+    `gatsby-plugin-offline`,
   ],
 }
