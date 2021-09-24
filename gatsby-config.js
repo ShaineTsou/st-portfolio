@@ -9,9 +9,7 @@ module.exports = {
   siteMetadata: {
     title: "Shaine Tsou",
     description:
-      "Shaine Tsou is a Front End Developer with hands-on experience in JavaScript/ES6+, React, GraphQL, data structures and algorithms areas with eagerness to learn and master Back-end Development, Testing and TDD.",
-    author: "Shaine Tsou",
-    contact: "shaineagro06@gmail.com",
+      "Shaine Tsou is a Front End Developer with hands-on experience in JavaScript, React and Python areas with eagerness to continuously learn and master web technologies.",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
