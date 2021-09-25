@@ -20,8 +20,6 @@ const SEO = ({ title, description, image }) => {
     }
   `)
 
-  console.log(site)
-
   const {
     defaultTitle,
     defaultDescription,
