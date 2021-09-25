@@ -10,6 +10,9 @@ module.exports = {
     title: "Shaine Tsou",
     description:
       "Shaine Tsou is a Front End Developer with hands-on experience in JavaScript, React and Python areas with eagerness to continuously learn and master web technologies.",
+    url: "https://st-portfolio.netlify.app", // No trailing slash allowed!
+    image: "/st-portfolio-hero.png",
+    twitterUsername: "@ShaineTsou",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -58,6 +61,16 @@ module.exports = {
         icon: `src/images/icon-raw.png`,
         icons: [
           {
+            src: `/favicons/favicon-16x16.png`,
+            sizes: `16x16`,
+            type: `image/png`,
+          },
+          {
+            src: `/favicons/favicon-32x32.png`,
+            sizes: `32x32`,
+            type: `image/png`,
+          },
+          {
             src: `/favicons/android-chrome-192x192.png`,
             sizes: `192x192`,
             type: `image/png`,
@@ -66,6 +79,12 @@ module.exports = {
             src: `/favicons/android-chrome-512x512.png`,
             sizes: `512x512`,
             type: `image/png`,
+          },
+          {
+            src: `/favicons/maskable-st-icon-196x196.png`,
+            sizes: `196x196`,
+            type: `image/png`,
+            purpose: `maskable`,
           },
         ],
       },

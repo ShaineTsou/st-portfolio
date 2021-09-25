@@ -13,7 +13,7 @@ import Contact from "../components/sections/contact/contact.component"
 export default function Home() {
   return (
     <Layout>
-      <Seo title="Shaine Tsou" />
+      <Seo />
       <Hero />
       <About />
       <Skills />
