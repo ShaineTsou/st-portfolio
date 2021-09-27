@@ -186,7 +186,7 @@
   }
 
   &.fun {
-    width: 325px;
+    width: 100%;
     min-height: 225px;
     display: flex;
     flex-direction: column;
@@ -287,13 +287,11 @@
     }
 
     @media screen and (max-width: 480px) {
-      width: 285px;
       border-radius: 20px;
       @include infoCardMobile480();
     }
 
     @media screen and (max-width: 320px) {
-      width: 200px;
       min-height: 250px;
     }
   }
