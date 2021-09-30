@@ -2,7 +2,7 @@
 category: featured-projects
 priority: 2
 title: Smart Brain
-cover: ./images/thumbnail-smart-brain-multiple-detection.png
+cover: ./images/thumbnail-smart-brain.png
 github: https://github.com/ShaineTsou/smart-brain
 external: https://smart-brain-st.herokuapp.com/
 language: 

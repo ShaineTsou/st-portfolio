@@ -11,11 +11,11 @@ const Hero = () => {
       <div className="hero-content-container">
         <h3>Hellooo! I am</h3>
         <h1>Shaine Tsou</h1>
-        <h2>I Build Websites</h2>
+        <h2>I Build Web Apps</h2>
         <div className="summary">
-          Front End Developer with hands-on experience in JavaScript/ES6+,
-          React, GraphQL, data structures and algorithms areas with eagerness to
-          learn and master Back-end Development, Testing and TDD.
+          I'm a front-end developer with hands-on experience in JavaScript,
+          React, and Python areas with eagerness to continuously learn and
+          master web technologies
         </div>
         <div className="connection-container">
           <SocialBtns hero />

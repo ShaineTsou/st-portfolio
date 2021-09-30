@@ -11,7 +11,7 @@ module.exports = {
     description:
       "Shaine Tsou is a Front End Developer with hands-on experience in JavaScript, React and Python areas with eagerness to continuously learn and master web technologies.",
     url: "https://www.shainetsou.space/", // No trailing slash allowed!
-    image: "/st-portfolio-hero.png",
+    image: "/og-image.png",
     twitterUsername: "@ShaineTsou",
   },
   plugins: [

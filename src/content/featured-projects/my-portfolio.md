@@ -2,7 +2,7 @@
 category: featured-projects
 priority: 3
 title: My Portfolio
-cover: ./images/thumbnail-st-portfolio-hero.png
+cover: ./images/thumbnail-st-portfolio.png
 github: https://github.com/ShaineTsou/st-portfolio
 external: https://www.shainetsou.space/
 language: 
