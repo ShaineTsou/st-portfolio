@@ -7,10 +7,13 @@ github: https://github.com/ShaineTsou/crwn-clothing
 external: https://crwn-st-live.herokuapp.com
 language: 
  - JavaScript
+ - Sass
  - HTML5
 tech:
  - React/Redux
  - CSS-in-JS
  - Firebase
+ - Stripe API
+ - Heroku
 ---
-A fancy clothing e-commerce website easy for you to grab your style.
+An e-commerce demo website that allows you to <span style="color: ivory">sign in/up with email or Google account</span>, <span style="color: ivory">add items to cart</span> and <span style="color: ivory">pay with credit card</span> powered by [Stripe API](https://stripe.com/)

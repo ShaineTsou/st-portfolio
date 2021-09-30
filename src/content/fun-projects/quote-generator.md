@@ -10,7 +10,7 @@ language:
  - CSS3
  - HTML5
 tech:
- - API Integration
  - Vanilla JS
+ - API Integration
 ---
-A cheerful quote generator that keeps your chin up!
+A web app which generates <span style="color: ivory">random quotes</span> that can be shared to <span style="color: ivory">Twitter</span>
