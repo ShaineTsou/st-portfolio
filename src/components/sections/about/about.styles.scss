@@ -10,21 +10,29 @@
   @include mainHeaderStyles;
 
   .about-content-container {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
     @include flexCenter;
 
     .introduction {
-      margin: 0 30px;
-      width: 50%;
+      margin: 0 15px;
+      width: 55%;
       @include paragraphStyles;
       text-align: left;
       font-size: 1.25rem;
       line-height: 1.5rem;
+
+      a {
+        color: $paragraphColor;
+      }
+
+      a:hover {
+        color: $hoverColor;
+      }
     }
 
     .avatar-container {
-      width: 50%;
+      width: 45%;
 
       img {
         width: 275px;
@@ -38,7 +46,8 @@
       flex-direction: column-reverse;
 
       .introduction {
-        width: 90%;
+        // border: 1px solid lightskyblue;
+        width: 95%;
         margin: 20px;
         font-size: 1.15rem;
         line-height: 1.3rem;

@@ -12,4 +12,4 @@ language:
 tech:
  - Vanilla JS
 ---
-A web app which generates <span style="color: ivory">CSS code</span> of <span style="color: ivory">customized</span> or <span style="color: ivory">random CSS gradient background</span>
+A web app which generates <span style="color: ivory">CSS code</span> of customized or random <span style="color: ivory">gradient background</span>

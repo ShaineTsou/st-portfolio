@@ -10,4 +10,4 @@ language:
 tech:
  - API Integration
 ---
-A password checker which checks the user's <span style="color: ivory">breached passwords</span> by using [HIBP API](https://haveibeenpwned.com/)
+A password checker which checks user's <span style="color: ivory">breached passwords</span> by using [HIBP API](https://haveibeenpwned.com/)

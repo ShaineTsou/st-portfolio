@@ -13,7 +13,5 @@ tech:
  - React/Redux
  - CSS-in-JS
  - Firebase
- - Stripe API
- - Heroku
 ---
 An e-commerce demo website that allows you to <span style="color: ivory">sign in/up with email or Google account</span>, <span style="color: ivory">add items to cart</span> and <span style="color: ivory">pay with credit card</span> powered by [Stripe API](https://stripe.com/)
