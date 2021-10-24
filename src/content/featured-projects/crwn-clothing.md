@@ -1,6 +1,6 @@
 ---
 category: featured-projects
-priority: 1
+priority: 2
 title: CRWN Clothing
 cover: ./images/thumbnail-crwn-clothing.png
 github: https://github.com/ShaineTsou/crwn-clothing
