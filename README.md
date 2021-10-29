@@ -1,8 +1,8 @@
 # My Portfolio - [shainetsou.space](https://www.shainetsou.space)
-
-My portfolio website built with React and Gatsby and deployed to Netlify
-
 [![Netlify Status](https://api.netlify.com/api/v1/badges/fbf70081-5657-4db7-bb2f-488ea9a4bc92/deploy-status)](https://app.netlify.com/sites/st-portfolio/deploys)
+
+![Image of My Portfolio Home Page](./static/og-image.png)
+My portfolio website built with React and Gatsby and deployed to Netlify
 
 ## Features
 - Responsive Web Design (RWD)
