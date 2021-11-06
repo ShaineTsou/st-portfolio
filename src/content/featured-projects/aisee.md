@@ -10,7 +10,7 @@ language:
  - CSS3
  - HTML5
 tech:
- - React
+ - React/Redux
  - CSS-in-JS
  - Node.js
  - PostgreSQL

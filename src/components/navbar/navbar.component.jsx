@@ -100,9 +100,9 @@ class Navbar extends React.Component {
           >
             Contact
           </button>
-          <CustomBtn>
-            <a href="/resume.pdf">Resume</a>
-          </CustomBtn>
+          <Link to="/resume.pdf">
+            <CustomBtn>Resume</CustomBtn>
+          </Link>
         </div>
       </nav>
     )
