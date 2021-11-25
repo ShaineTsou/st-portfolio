@@ -15,8 +15,8 @@ const About = () => {
           I enjoy solving challenging problems and creating software.
           <br />
           <br />
-          My goal is to work with people much smarter than me and build tech for
-          good. I look forward to learning and expanding my knowledge in web
+          My goal is to work with an excellent team and build tech for good. I
+          look forward to learning and expanding my knowledge in web
           technologies.
           <br />
           <br />
