@@ -15,6 +15,7 @@ const SEO = ({ title, description, image }) => {
           siteUrl: url
           defaultImage: image
           twitterUsername
+          twitterImage
         }
       }
     }
@@ -26,6 +27,7 @@ const SEO = ({ title, description, image }) => {
     siteUrl,
     defaultImage,
     twitterUsername,
+    twitterImage,
   } = site.siteMetadata
 
   const seo = {
@@ -58,7 +60,7 @@ const SEO = ({ title, description, image }) => {
       <meta property="twitter:title" content={seo.title} />
       <meta property="twitter:description" content={seo.description} />
       <meta property="twitter:creator" content={twitterUsername} />
-      <meta property="twitter:image" content={seo.image} />
+      <meta property="twitter:image" content={`${siteUrl}${twitterImage}`} />
     </Helmet>
   )
 }
