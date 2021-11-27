@@ -100,9 +100,13 @@ class Navbar extends React.Component {
           >
             Contact
           </button>
-          <Link to="/resume.pdf">
+          <a
+            href="https://www.cakeresume.com/shaine-tsou"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <CustomBtn>Resume</CustomBtn>
-          </Link>
+          </a>
         </div>
       </nav>
     )
