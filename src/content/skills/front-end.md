@@ -9,6 +9,5 @@ skill_icon_pairs:
  - ['React', 'SiReact']
  - ['Redux', 'SiRedux']
  - ['Gatsby', 'SiGatsby']
- - ['GraphQL', 'SiGraphql']
  - ['CSS-in-JS', 'SiStyledComponents']
 ---
