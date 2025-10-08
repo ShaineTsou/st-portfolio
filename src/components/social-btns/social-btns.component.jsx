@@ -26,7 +26,7 @@ const SocialBtns = ({ ...otherProps }) => {
       </a>
       <a
         className="social-btn"
-        href="https://www.linkedin.com/in/shaine-tsou/"
+        href="https://www.linkedin.com/in/shainetsou/"
         target="_blank"
         rel="noopener noreferrer"
       >
